@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aplicaciones — Cálculo Integral</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="assets/ecci.png" alt="ECCI" class="logo" />
+                <div>
+                    <h1>Aplicaciones Tecnológicas</h1>
+                    <p class="sub">Dónde se usa la integral</p>
+                </div>
+            </div>
+            <button id="navToggle" class="hamburger"
+                aria-label="Abrir menú"><span></span><span></span><span></span></button>
+        </div>
+        <nav id="mainNav" class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="resumen.html">Resumen</a>
+            <a href="fundamentos.html">Fundamentos</a>
+            <a href="aplicaciones.html">Aplicaciones</a>
+            <a href="comparacion.html">Comparación</a>
+            <a href="importancia.html">Importancia</a>
+            <a href="grafica.html">Gráfica</a>
+            <a href="conclusion.html">Conclusión</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="card content">
+            <h2>Aplicaciones tecnológicas detalladas</h2>
+
+            <h3>Simulación digital</h3>
+            <p>Los motores de física y simulación usan integrales para calcular energía, trayectorias y desplazamientos.
+                Esto permite reproducir comportamientos reales en entornos digitales con alta precisión.</p>
+
+            <h3>Procesamiento de señales</h3>
+            <p>La Transformada de Fourier (integral) permite descomponer señales en frecuencias, esencial en compresión
+                de audio, imagen y en análisis de señales biomédicas.</p>
+
+            <h3>Inteligencia artificial</h3>
+            <p>En aprendizaje automático, integrales aparecen en funciones de costo esperadas y en estimaciones
+                probabilísticas (por ejemplo, integrales en distribuciones continuas).</p>
+
+            <h3>Análisis energético</h3>
+            <p>La energía total consumida se modela como:</p>
+            <pre class="formula">E = ∫₀ᵀ P(t) dt</pre>
+            <p>Esto se aplica en control industrial, optimización de consumo y diseño de sistemas automáticos.</p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Universidad ECCI — Aplicaciones</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

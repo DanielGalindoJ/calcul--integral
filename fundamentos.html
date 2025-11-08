@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fundamentos — Cálculo Integral</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="assets/ecci.png" alt="ECCI" class="logo" />
+                <div>
+                    <h1>Fundamentos</h1>
+                    <p class="sub">Principios matemáticos y ecuaciones</p>
+                </div>
+            </div>
+            <button id="navToggle" class="hamburger"
+                aria-label="Abrir menú"><span></span><span></span><span></span></button>
+        </div>
+        <nav id="mainNav" class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="resumen.html">Resumen</a>
+            <a href="fundamentos.html">Fundamentos</a>
+            <a href="aplicaciones.html">Aplicaciones</a>
+            <a href="comparacion.html">Comparación</a>
+            <a href="importancia.html">Importancia</a>
+            <a href="grafica.html">Gráfica</a>
+            <a href="conclusion.html">Conclusión</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="card content">
+            <h2>Idea matemática</h2>
+            <p>El cálculo integral acumula infinitesimales para modelar fenómenos continuos. Su forma límite se expresa
+                como:</p>
+            <pre class="formula">∫ₐᵇ f(x) dx = limₙ→∞ Σᵢ₌₁ⁿ f(xᵢ) Δx</pre>
+
+            <h3>Teorema Fundamental del Cálculo</h3>
+            <p>Relaciona derivada e integral: si F'(x) = f(x), entonces ∫ₐᵇ f(x) dx = F(b) − F(a). Esto es clave para
+                convertir datos instantáneos en acumulados en simulación y software científico.</p>
+
+            <h3>Notas sobre métodos numéricos</h3>
+            <p>En computación se usan sumas de Riemann, trapecios y Simpson para aproximar integrales cuando no hay
+                primitiva analítica — estos métodos son la base de muchas simulaciones y control numérico.</p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Universidad ECCI — Fundamentos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

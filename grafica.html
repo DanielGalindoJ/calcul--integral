@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gráfica interactiva — Cálculo Integral (ECCI)</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="assets/ecci.png" alt="ECCI" class="logo" />
+                <div>
+                    <h1>Gráfica interactiva</h1>
+                    <p class="sub">Área bajo la curva — Cálculo Integral</p>
+                </div>
+            </div>
+            <button id="navToggle" class="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav id="mainNav" class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="resumen.html">Resumen</a>
+            <a href="fundamentos.html">Fundamentos</a>
+            <a href="aplicaciones.html">Aplicaciones</a>
+            <a href="comparacion.html">Comparación</a>
+            <a href="importancia.html">Importancia</a>
+            <a href="grafica.html">Gráfica</a>
+            <a href="conclusion.html">Conclusión</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="card content">
+            <h2>Visualización de la integral definida</h2>
+            <p>
+                Esta herramienta muestra el <strong>área bajo la curva</strong> de una función matemática entre los
+                límites
+                <code>a</code> y <code>b</code>. Puedes cambiar la función y los límites para observar cómo cambia el
+                área
+                calculada.
+            </p>
+
+            <div class="controls">
+                <label>Función:
+                    <select id="funcSelect">
+                        <option value="sin">sin(x)</option>
+                        <option value="cos">cos(x)</option>
+                        <option value="tan">tan(x)</option>
+                        <option value="x2">x²</option>
+                        <option value="x3">x³/10</option>
+                        <option value="exp">e^(x/3)</option>
+                        <option value="ln">ln(x)</option>
+                        <option value="gauss">e^(-x²)</option>
+                    </select>
+                </label>
+
+                <label>Intervalo a:
+                    <input id="aInput" type="number" step="0.1" value="0" />
+                </label>
+
+                <label>Intervalo b:
+                    <input id="bInput" type="number" step="0.1" value="3.1416" />
+                </label>
+
+                <button id="redrawBtn" class="btn small">Actualizar gráfica</button>
+            </div>
+
+            <canvas id="graficaIntegral"></canvas>
+            <p id="areaNote" class="nota" style="text-align:center;margin-top:1rem;">Área aproximada ≈ —</p>
+        </article>
+
+        <!-- 🔹 Sección de ejemplo explicativo -->
+        <section class="card" style="text-align:center;">
+            <h2>Ejemplo: f(x) = sin(x), a = 0, b = π</h2>
+            <p>
+                En este ejemplo, se representa la función <strong>sin(x)</strong> entre 0 y π. El área bajo la curva
+                corresponde a la integral:
+            </p>
+            <pre class="formula">∫₀^π sin(x) dx = 2</pre>
+            <p>
+                Esto significa que el área total comprendida entre la función y el eje X en ese intervalo es
+                <strong>2 unidades cuadradas</strong>. La gráfica mostrará esta área en color azul translúcido.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 — Universidad ECCI | Proyecto académico de Cálculo Integral</p>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top">↑</button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
